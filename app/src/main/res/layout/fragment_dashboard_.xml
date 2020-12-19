@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Dashboard_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8E2E2"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/colorBlack"
+            app:subtitleTextColor="@color/colorBlack">
+
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchStatus"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="Status"
+                android:layout_height="50dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pending Orders"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:spanCount="2"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:id="@+id/myOrderListView"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

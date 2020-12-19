@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MyOrders_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:gravity="end"
+                                    android:weightSum="8">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="end"
+                                        android:layout_gravity="center"
+                                        android:text="Delivery Address"
+                                        android:textSize="15sp"
+                                        android:textStyle="italic" />
+
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/map1" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:gravity="start"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/myOrder_cname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="xxxx xxx"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="20sp"
+                                        android:textAllCaps="true"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:id="@+id/myOrder_house"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="xxxxxxx"/>
+
+                                    <TextView
+                                        android:id="@+id/myOrder_area"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="xxxxx"/>
+
+                                    <TextView
+                                        android:id="@+id/myOrder_pincode"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="xxxx"/>
+
+                                </LinearLayout>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    app:cardCornerRadius="3dp"
+                                    android:layout_gravity="center">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:weightSum="6">
+
+                                        <TextView
+                                            android:id="@+id/myOrder_cnumber"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="3"
+                                            android:gravity="center"
+                                            android:text="xxxxxxxxx">
+
+                                        </TextView>
+
+                                        <androidx.appcompat.widget.AppCompatImageButton
+                                            android:id="@+id/myOrder_callbtn"
+                                            android:layout_width="70dp"
+                                            android:layout_height="60dp"
+                                            android:background="@drawable/callbtn3">
+
+                                        </androidx.appcompat.widget.AppCompatImageButton>
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    app:cardCornerRadius="3dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_gravity="center">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:weightSum="6">
+
+                                        <TextView
+                                            android:id="@+id/myOrder_caltnumber"
+                                            android:layout_width="80dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="3"
+                                            android:gravity="center"
+                                            android:text="xxxxxxxx"/>
+
+                                        <androidx.appcompat.widget.AppCompatImageButton
+                                            android:id="@+id/myOrder_callaltbtn"
+                                            android:layout_width="70dp"
+                                            android:layout_height="60dp"
+                                            android:background="@drawable/callbtn3">
+
+                                        </androidx.appcompat.widget.AppCompatImageButton>
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:weightSum="9">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="8"
+                                        android:gravity="right"
+                                        android:text="Product Details"
+                                        android:textSize="15sp"
+                                        android:textStyle="italic" />
+
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/productimg"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/myOrder_image"
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/ic_launcher"/>
+
+                                    <TextView
+                                        android:id="@+id/myOrder_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="Product Name"
+                                        android:textAllCaps="true"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/colorBlack"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold">
+
+                                    </TextView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:weightSum="9">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_weight="2"
+                                        android:gravity="right"
+                                        android:text="Qty"
+                                        android:textSize="15sp"
+                                        android:textStyle="normal"/>
+
+                                    <TextView
+                                        android:id="@+id/myOrder_qty"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:text="xx"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="right"
+                                        android:text="Price"
+                                        android:textSize="15sp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/myOrder_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:text="xxx"
+                                        android:textStyle="bold"
+                                        android:textSize="20sp"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="right"
+                                    android:weightSum="9">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:gravity="right"
+                                        android:text="Total Amount"
+                                        android:textSize="15sp"/>
+
+
+                                    <TextView
+                                        android:id="@+id/myOrder_TotalPrice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:text="xxxx"
+                                        android:textColor="@color/colorRed"
+                                        android:textSize="25sp"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="20dp"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/colorBlack"
+                                        android:text="Status"/>
+
+                                    <TextView
+                                        android:id="@+id/myOrder_status"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/colorBlack"
+                                        android:text="xxxxx"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:gravity="right">
+
+                                    <Button
+                                        android:id="@+id/myOrder_button"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/grupcom"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
